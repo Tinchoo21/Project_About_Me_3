@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Adnan Tinjak</title>
+  <!--
+    Name : Adnan Tinjak
+    ID: 190302036
+    Course : CS412[2]
+    Assignment : Project 3-HTML+CSS+JavaScript
+    Due date : 09.12.2021
+   -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" type="text/css" href="bio.css">
+ 
+  <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+<script src="skill.bars.jquery.js"></script>
+<script>
+
+  $(document).ready(function(){
+    
+    $('.skillbar').skillBars({
+      from: 0,
+      speed: 4000, 
+      interval: 100,
+      decimals: 0,
+    });
+    
+  });
+  
+  </script>
+  
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="logo4.png" class="logo"></a>
+      <div class="nav-links" id="navLinks">
+        
+        <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="bio.html">BIO</a></li>
+        
+        <li><a href="contact.html">CONTACT</a></li>
+        
+      </ul>
+      </div>
+   
+    </nav> <header>
+   <div class="head">
+      <h1>Hello , my name is Adnan</h1>
+      <a href="#About" class="btn">About me</a>
+      <a href="contact.html" class="btn">Contact me</a>
+   </div>
+        </header>
+  </section>
+ 
+<!------------About Me ----------------->
+        <div class="about-me">
+
+        <a name="About"><h2>ABOUT ME</h2></a>  
+
+          <div class="col-left">
+           <img src="image1.jpg" alt="Image of Adnan">
+          </div>
+
+          <div class="col-right">
+            <h4>Adnan Tinjak</h4>
+          <br>
+          <p>Hey , thanks for checking my page. I am Adnan</p><br>
+       <p>  I am 3<sup>rd</sup> year student at <a href="https://www.ius.edu.ba/" target="_blank"><abbr title="International University of Sarajevo">IUS</abbr></a> ,  Faculty <abbr title="Faculty of Engineering and Natural Sciences">FENS</abbr> - Department - <i>Software Engineering</i>.
+   I am from <a href="https://en.wikipedia.org/wiki/Sarajevo" 
+    target="_blank"><i>Sarajevo</i></a> ,capital city of <a href="https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina" target="_blank"><abbr title="Bosnia and Herzegovina"><i>BiH</i></abbr></a>. 
+  I am 21 years old.<br>
+     
+     <br>
+     I have a diverse personality that includes ambition as well as qualities like generosity and sensitivity.<br>
+ I am also a strong and driven individual who is pleasantly calm and inspires people to fight for what they want and believe in.</p><br>
+ <p>My hobbies are:</p><br>
+
+ <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Computer programming')">Computer programming</button>
+  <button class="tablinks" onclick="openCity(event, 'Web Development')">Web Development</button>
+  <button class="tablinks" onclick="openCity(event, 'Other')">Other</button>
+</div>
+
+<div id="Computer programming" class="tabcontent">
+  <h3>Computer programming</h3>
+  <ul>
+    <li>C++</li>
+    <li>Java</li>
+    <li>Python</li>
+    <li>C#</li>
+  </ul>
+</div>
+
+<div id="Web Development" class="tabcontent">
+  <h3>Web Development</h3>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>NodeJs</li>
+  </ul>
+</div>
+
+<div id="Other" class="tabcontent">
+  <h3>Other</h3>
+  <ul>
+    <li>Solving puzzles</li>
+    <li>Playing chess</li>
+    <li>Reading</li>
+    <li>Travelling</li>
+  </ul>
+</div>
+ <script> function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";}</script> 
+ <br><hr>
+ <a href="contact.html" class="btn-about">Contact Me</a>
+          </div>
+       
+
+        </div><hr>
+
+  <!----- Skills -------------->
+<div class="skills">
+  <div class="wrapper">
+    <h2>SKILLS</h2>
+   
+    
+    <div class="skillbar" data-percent="95">
+      <span class="skillbar-title" style="background: #d35400;">HTML5</span>
+      <p class="skillbar-bar" style="background: #e67e22;"></p>
+      <span class="skill-bar-percent"></span>
+    </div>
+    <!-- End Skill Bar -->
+    
+    <div class="skillbar" data-percent="80">
+      <span class="skillbar-title" style="background: #2980b9;">CSS3</span>
+      <p class="skillbar-bar" style="background: #3498db;"></p>
+      <span class="skill-bar-percent"></span>
+    </div>
+    <!-- End Skill Bar -->
+    
+    <div class="skillbar" data-percent="40">
+      <span class="skillbar-title" style="background: #2c3e50;">JavaScript</span>
+      <p class="skillbar-bar" style="background: #2c3e50;"></p>
+      <span class="skill-bar-percent"></span>
+    </div>
+    <!-- End Skill Bar -->
+    
+    <div class="skillbar" data-percent="15">
+      <span class="skillbar-title" style="background: #46465e;">NodeJs</span>
+      <p class="skillbar-bar" style="background: #5a68a5;"></p>
+      <span class="skill-bar-percent"></span>
+    </div>
+    <!-- End Skill Bar -->
+</div>
+</div>
+
+  <!--------------- Education -----------------------> 
+
+<div class="edu">
+
+<h2>EDUCATON</h2>
+
+   <table class="content">
+  <tr class="first">
+    <th>Date</th>
+    <th>Institution</th>
+    <th>Education level</th>
+    <th>Section</th>
+  </tr>
+  <tr>
+    <th>2006-2015</th>
+    <th><a href="http://www.os-sk.edu.ba/" target="_blank">OS "Skender Kulenovic"</a></th>
+    <th>Primary School</th>
+    <th>General</th>
+  </tr>
+  <tr>
+    <th>2015-2019</th>
+    <th><a href="http://gdobrinja.edu.ba/" target="_blank">JU "Gimnazija Dobrinja"</a></th>
+    <th>High School</th>
+    <th>Mathematics and Computer Science</th>
+  </tr>
+  <tr>
+    <th>2019-Present</th>
+    <th><a href="https://www.ius.edu.ba/" target="_blank">International University of Sarajevo</a></th>
+    <th>University</th>
+    <th>Software Engineering</th>
+  </tr>
+ </table><br><br><br>
+
+  
+</div>
+
+<div class="motto">
+  <h2>MOTTO</h2>
+  <blockquote>
+  Watch your thoughts; they become words. Watch your words; they become actions. Watch your actions; they become habits. Watch your habits; they become character. Watch your character; it becomes your destiny
+  <span>Lao-Tze</span>
+</blockquote><br><br>
+<p>&copyCS412 [2] - 190302036</p>
+</div>
+
+
+
+
+
+    
+  </body>
+  </html>
